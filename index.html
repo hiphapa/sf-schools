@@ -1,35 +1,54 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html">
-  <title>Simple Table Sorting with jQuery - Treehouse Demo</title>
-  <meta name="author" content="Jake Rocheleau">
-  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
-  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
-</head>
-<table id="keywords" cellspacing="0" cellpadding="0">
-    <thead>
-      <tr>
-        <th><span>Keywords</span></th>
-        <th><span>Impressions</span></th>
-        <th><span>Clicks</span></th>
-        <th><span>CTR</span></th>
-        <th><span>Rank</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="lalign">silly tshirts</td>
-        <td>6,000</td>
-        <td>110</td>
-        <td>1.8%</td>
-        <td>22.2</td>
-      </tr>
-      
-$(function(){
-  $('#keywords').tablesorter(); 
-});
+<table class="table2" data-sortlist="[[0,0],[2,0]]">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+      <th>Total</th>
+      <th>Discount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peter</td>
+      <td>Parker</td>
+      <td>28</td>
+      <td>$9.99</td>
+      <td>20%</td>
+      <td>Jul 6, 2006 8:14 AM</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Hood</td>
+      <td>33</td>
+      <td>$19.99</td>
+      <td>25%</td>
+      <td>Dec 10, 2002 5:14 AM</td>
+    </tr>
+    <tr>
+      <td>Clark</td>
+      <td>Kent</td>
+      <td>18</td>
+      <td>$15.89</td>
+      <td>44%</td>
+      <td>Jan 12, 2003 11:14 AM</td>
+    </tr>
+    <tr>
+      <td>Bruce</td>
+      <td>Almighty</td>
+      <td>45</td>
+      <td>$153.19</td>
+      <td>44%</td>
+      <td>Jan 18, 2001 9:12 AM</td>
+    </tr>
+    <tr>
+      <td>Bruce</td>
+      <td>Evans</td>
+      <td>22</td>
+      <td>$13.19</td>
+      <td>11%</td>
+      <td>Jan 18, 2007 9:12 AM</td>
+    </tr>
+  </tbody>
+</table>
