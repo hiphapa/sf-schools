@@ -1,13 +1,33 @@
-<!DOCTYPE html>
-<html>
- <head>
- <link type="text/css" rel="stylesheet" href="./css/main.css" />
- </head>
- <body>
- </body>
-</html>
-
-
+<script type="text/javascript" src="./js/jquery-latest.js"></script> 
+    <script type="text/javascript" src="./js/jquery.tablesorter.min.js"></script>
+  <link rel="stylesheet" href="./themes/blue/style.css" type="text/css" media="print, projection, screen" />
+  
+  <table id="domainsTable" class="tablesorter"> 
+    <thead> 
+    <tr> 
+        <th>Domain name</th> 
+        <th>gTld</th> 
+        <th>Category</th> 
+        <th>Price</th> 
+        <th>Contact</th> 
+    </tr> 
+    </thead> 
+    <tbody> 
+      <tr><td><a href="http://geogram.co">geogram.co</a></td><td>co</td><td>Internet</td><td>$49</td><td><a href="mailto:jeff@lookahead.io?subject=Offer for domain name: geogram.co">Purchase</a></td></tr>
+      <tr><td><a href="http://newscloud.com">newscloud.com</a></td><td>com</td><td>News</td><td>$19999</td><td><a href="mailto:jeff@lookahead.io?subject=Offer for domain name: newscloud.com">Purchase</a></td></tr>
+      <tr><td><a href="http://popcloud.com">popcloud.com</a></td><td>com</td><td>Music</td><td>$14999</td><td><a href="mailto:jeff@lookahead.io?subject=Offer for domain name: popcloud.com">Purchase</a></td></tr>
+<!-- ... -->
+</tbody> 
+    </table> 
+    
+    <script>
+    $(document).ready(function() 
+        { 
+            $("#domainsTable").tablesorter({sortList: [[3,1],[2,0]]}); 
+        } 
+    );
+    </script>
+    </body>
 
 <table class="table2" data-sortlist="[[0,0],[2,0]]">
   <thead>
